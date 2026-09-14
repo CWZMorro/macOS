@@ -3,7 +3,7 @@ monitorDwindleOverrides = []
 monitorGapOverrides = []
 monitorNiriOverrides = []
 monitorOrientationOverrides = []
-monitorRoutingOverrides = []
+schemaVersion = 3
 
 [appearance]
 mode = "dark"
@@ -39,8 +39,10 @@ followsWindowToMonitor = true
 lockModifier = "off"
 moveCrossesMonitorAtEdge = false
 moveMouseToFocusedWindow = false
+raiseOnMouseFocus = true
 
 [gaps]
+fullscreenUsesOuterGaps = false
 size = 8.0
 
 [gaps.outer]
@@ -53,6 +55,7 @@ top = 0.0
 animationsEnabled = true
 defaultLayoutType = "niri"
 hotkeysEnabled = true
+hyperKeyModifiers = "Control+Option+Shift+Command"
 ipcEnabled = false
 preventSleepEnabled = false
 systemHyperTrigger = "None"
@@ -132,7 +135,12 @@ position = "center"
 widthPercent = 50.0
 
 [routing]
+arrangements = []
 mode = "macOS"
+
+[scratchpads]
+
+[scratchpads.labels]
 
 [statusBar]
 showAppNames = true
@@ -146,6 +154,7 @@ enabled = true
 excludedBundleIDs = []
 height = 24.0
 hideEmptyWorkspaces = false
+hideInNativeFullscreen = false
 notchActiveZoneWidth = 180.0
 notchMode = "moveBelowMenuBar"
 position = "overlappingMenuBar"
@@ -245,6 +254,86 @@ id = "A7464FE8-2070-49E3-B8A6-9393EC4491B9"
 layout = "float"
 
 [[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.1"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.1"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.2"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.2"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.3"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.3"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.4"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.4"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.5"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.5"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.6"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.6"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.7"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.7"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.8"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.8"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.9"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.9"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "toggleScratchpad.10"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "assignFocusedWindowToScratchpad.10"
+
+[[hotkeys]]
 binding = "Option+1"
 id = "switchWorkspace.0"
 
@@ -315,6 +404,78 @@ id = "switchWorkspace.8"
 [[hotkeys]]
 binding = "Option+Shift+9"
 id = "moveToWorkspace.8"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.1"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.1"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.2"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.2"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.3"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.3"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.4"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.4"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.5"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.5"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.6"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.6"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.7"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.7"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.8"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.8"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "switchWorkspaceSlot.9"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveToWorkspaceSlot.9"
 
 [[hotkeys]]
 binding = "Unassigned"
@@ -474,14 +635,6 @@ id = "moveWindowUpOrToWorkspaceUp"
 
 [[hotkeys]]
 binding = "Unassigned"
-id = "consumeOrExpelWindowLeft"
-
-[[hotkeys]]
-binding = "Unassigned"
-id = "consumeOrExpelWindowRight"
-
-[[hotkeys]]
-binding = "Unassigned"
 id = "consumeWindowIntoColumn"
 
 [[hotkeys]]
@@ -515,6 +668,22 @@ id = "moveWorkspaceToMonitor.up"
 [[hotkeys]]
 binding = "Unassigned"
 id = "moveWorkspaceToMonitor.down"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveWindowToMonitor.left"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveWindowToMonitor.right"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveWindowToMonitor.up"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveWindowToMonitor.down"
 
 [[hotkeys]]
 binding = "Option+Shift+F"
@@ -746,35 +915,19 @@ id = "swapSplit"
 
 [[hotkeys]]
 binding = "Unassigned"
-id = "resizeGrow.left"
+id = "resizeGrow.horizontal"
 
 [[hotkeys]]
 binding = "Unassigned"
-id = "resizeGrow.right"
+id = "resizeGrow.vertical"
 
 [[hotkeys]]
 binding = "Unassigned"
-id = "resizeGrow.up"
+id = "resizeShrink.horizontal"
 
 [[hotkeys]]
 binding = "Unassigned"
-id = "resizeGrow.down"
-
-[[hotkeys]]
-binding = "Unassigned"
-id = "resizeShrink.left"
-
-[[hotkeys]]
-binding = "Unassigned"
-id = "resizeShrink.right"
-
-[[hotkeys]]
-binding = "Unassigned"
-id = "resizeShrink.up"
-
-[[hotkeys]]
-binding = "Unassigned"
-id = "resizeShrink.down"
+id = "resizeShrink.vertical"
 
 [[hotkeys]]
 binding = "Unassigned"
@@ -822,11 +975,7 @@ id = "toggleFocusedWindowFloating"
 
 [[hotkeys]]
 binding = "Unassigned"
-id = "assignFocusedWindowToScratchpad"
-
-[[hotkeys]]
-binding = "Unassigned"
-id = "toggleScratchpadWindow"
+id = "closeFocusedWindow"
 
 [[hotkeys]]
 binding = "Control+Option+M"
