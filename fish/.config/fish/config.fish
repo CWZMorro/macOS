@@ -11,6 +11,10 @@ if status is-interactive
         # echo "use 'nvm use lts' to use npm"
     end
 
+    function cielarchazure
+        ssh arch
+    end
+
     alias bonsai "cbonsai -li"
     alias weather "curl -s https://weather.gc.ca/rss/city/ab-50_e.xml | grep \"Current Conditions\""
     alias lg lazygit
