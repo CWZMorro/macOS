@@ -15,6 +15,10 @@ if status is-interactive
         ssh arch
     end
 
+    function heylaubuntuazure
+        ssh ubuntu
+    end
+
     alias bonsai "cbonsai -li"
     alias weather "curl -s https://weather.gc.ca/rss/city/ab-50_e.xml | grep \"Current Conditions\""
     alias lg lazygit
@@ -24,9 +28,6 @@ if status is-interactive
     set -gx EDITOR nvim
 
 end
-
-# uv
-fish_add_path "/home/cielarchazure/.local/bin"
 
 # zoxide
 zoxide init fish --cmd cd | source
@@ -42,9 +43,3 @@ end
 alias ls="eza --color=always --icons=always"
 alias ll="eza -lg --color=always --icons=always"
 alias lt="eza --tree --color=always --icons=always"
-
-# pnpm
-set -gx PNPM_HOME "/home/cielarchazure/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
-end
