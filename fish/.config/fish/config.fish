@@ -39,6 +39,13 @@ else
     fastfetch -c ~/.config/fastfetch/minimal.jsonc
 end
 
+# firstmate
+function fm
+    pushd ~/firstmate; or return
+    omp $argv
+    popd
+end
+
 # eza
 alias ls="eza --color=always --icons=always"
 alias ll="eza -lg --color=always --icons=always"
